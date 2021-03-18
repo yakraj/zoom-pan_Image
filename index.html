@@ -2,14 +2,25 @@
 <html>
 <body>
 
-<p ondblclick="myFunction()">Double-click this paragraph to trigger a function.
-		<img id ='userImage' className = "PreviewImage" src = "https://cdn.pixabay.com/photo/2016/01/08/11/57/butterflies-1127666_960_720.jpg" />
+<p >Double-click this paragraph to trigger a function.
+		
+
+<div id = 'manipulation' style= "width:50vw; height:50vw; border:1px solid black; overflow:hidden ">
+
+ <img  ondblclick="myFunction()" id ='userImage' className = "PreviewImage" src = "https://cdn.pixabay.com/photo/2016/01/08/11/57/butterflies-1127666_960_720.jpg" />
+
+
+</div>
+
+
 </p>
 
 
 
 <style>
-
+#manipulation{
+touch-action: manipulation;
+}
 img{
 touch-action: manipulation;
 width: 100%;}
