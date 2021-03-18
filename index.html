@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p ondblclick="myFunction()">Double-click this paragraph to trigger a function.
+		<img id ='userImage' className = "PreviewImage" src = "https://cdn.pixabay.com/photo/2016/01/08/11/57/butterflies-1127666_960_720.jpg" />
+</p>
+
+
+
+<style>
+
+img{
+touch-action: manipulation;
+width: 100%;}
+
+</style>
+
+<script>
+function myFunction() {
+  const image = document.getElementById("userImage")
+  image.style.width = '200%'
+}
+</script>
+
+</body>
+</html>
